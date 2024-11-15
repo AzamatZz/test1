@@ -1,0 +1,55 @@
+.pokemon-list-container {
+    text-align: center;
+}
+
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    button {
+        border: 1px solid #fff;
+        border-radius: 8px;
+        padding: 10px;
+        width: 80px;
+        height: 40px;
+        background-color: #000000;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover:not(:disabled) {
+            background-color: #000000;
+        }
+
+        &:disabled {
+            background-color: #000000;
+            color: #999;
+            cursor: not-allowed;
+        }
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        width: 80px;
+        height: 40px;
+        background-color: #000;
+        color: #ffffff;
+    }
+}
+

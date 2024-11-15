@@ -1,0 +1,48 @@
+.pokemon-card {
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    transition: transform 0.2s;
+    border: 1px solid #fff;
+    padding: 15px 12px;
+    width: 340px;
+    height: 274px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    button {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #fff;
+        background: #db00ff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 8px;
+        padding: 10px;
+        width: 316px;
+        height: 42px;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}
+.box {
+    width: 200px;
+    height: 170px;
+}
