@@ -1,0 +1,141 @@
+// TaskListPage.module.scss
+
+.pageWrapper {
+    background-color: #000; /* Черный фон для всей страницы */
+    height: 100vh; /* Высота страницы на весь экран */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.pageWrapper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 740px;
+}
+.header {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50.4px;
+    color: #FFFFFF;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 100px;
+    height: 54px;
+    padding: 16px;
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px #DB00FF solid;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    gap: 10px;
+
+    &:hover {
+        background-color: #DB00FF;
+    }
+
+    &:active {
+        background-color: #DB00FF;
+    }
+
+    &:disabled {
+        background-color: #ccc; /* Цвет для отключенной кнопки */
+        cursor: not-allowed;
+    }
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    width: 740px;
+    height: 54px;
+    gap: 90px;
+}
+.inputContainer2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input {
+    width: 440px;
+    padding: 16px;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background: transparent;
+    outline: none;
+
+    &::placeholder {
+        color: #9F9F9F;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+}
+
+
+
+.taskListContainer {
+    margin-top: 40px; /* Отступ между кнопками и списком задач */
+}
+
+.taskContainer {
+    width: 100%;
+    max-width: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем элементы */
+}
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    //margin-bottom: 10px;
+    //width: 100%;
+}
+
+.taskInput {
+        width: 440px;
+        //height: 54px;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 12px;
+        font-size: 1rem;
+        color: #fff;
+        background: transparent;
+        outline: none;
+        gap: 90px;
+
+        &::placeholder {
+            color: #9F9F9F;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+        }
+}
+
+.deleteButton {
+    background-color: #fff;
+    padding: 5px 15px;
+}
